@@ -3,6 +3,9 @@ tools:
     image: configcat/cli
     description: Allows to add a a value to a setting. receives the new identifier as a parameter to be added to the setting. the setting name and all others params are included in enviorment variables.
     alias: configcat-update
+    with_git_repo:
+      url: https://github.com/Kubiya-Barak/mend/tree/main
+      branch: main
     content: |
       #!/bin/bash
 
