@@ -1,7 +1,7 @@
 tools:
-  - name: configcat_cli
+  - name: configcat_onboarding_whitelist
     image: configcat/cli
-    description: Allows to add a a value to a setting. receives the new identifier as a parameter to be added to the setting. the setting name and all others params are included in enviorment variables.
+    description: Allows to add a a value to a setting (CONFIGCAT_SETTING_NAME). receives the new identifier as a parameter to be added to the setting. 
     alias: configcat-update
     content: |
       #!/bin/bash
