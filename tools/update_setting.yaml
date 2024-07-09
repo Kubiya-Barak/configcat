@@ -3,7 +3,6 @@ tools:
     image: configcat/cli
     description: Allows to add a a value to a setting (CONFIGCAT_SETTING_NAME). receives the new identifier as a parameter to be added to the setting. 
     alias: whitelistonboarding
-    type: docker
     content: |
       #!/bin/bash
 
