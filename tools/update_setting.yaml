@@ -53,7 +53,7 @@ tools:
 
       # Update the setting with the new list of identifiers
       echo "Updating setting with new identifier list..."
-      configcat flag value set --setting-id=${SETTING_ID} --value="IS ONE OF (hashed) ${UPDATED_IDENTIFIERS}"
+      configcat flag value update --setting-id=${SETTING_ID} --value="IS ONE OF (hashed) ${UPDATED_IDENTIFIERS}"
 
       echo "Setting updated successfully."
 
