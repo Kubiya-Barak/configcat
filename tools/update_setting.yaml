@@ -22,7 +22,7 @@ tools:
       fi
 
       # Fetch all settings and extract the ID for the specified setting name
-      echo "Fetching setting ID for ${SETTING_NAME}..."
+      print"Fetching setting ID for ${SETTING_NAME}...")
       SETTING_ID=$(configcat flag ls --config-id=${CONFIG_ID} | grep "${SETTING_NAME}" | awk '{print $1}')
 
       if [ -z "$SETTING_ID" ]; then
@@ -30,7 +30,7 @@ tools:
         exit 1
       fi
 
-      echo "Setting ID for ${SETTING_NAME} is ${SETTING_ID}"
+      print("Setting ID for ${SETTING_NAME} is ${SETTING_ID}")
 
       # Fetch the current configuration for the specified setting
       print("Fetching current configuration for setting ID ${SETTING_ID}...")
